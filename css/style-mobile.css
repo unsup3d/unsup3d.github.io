@@ -128,8 +128,11 @@
 
 		#banner .inner {
 			background: rgba(52, 27, 43, 0.8);
-			display: block;
-			padding: 0 1.5em;
+			color: white;
+			display: inline-block;
+			opacity: 0;
+			padding: 1.5em;
+			text-align: center;
 		}
 
 			#banner .inner header h2 {
