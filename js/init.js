@@ -63,20 +63,20 @@
 			}
 		}
 	});
-	
+
 	function convertDateAndTimezone(timeStr) {
         var newDate = new Date("2021-10-11T"+timeStr+":00.000Z");
-        return newDate.toString();   
+        return newDate.toString();
     }
-      
+
 	function convertTime(timeStr) {
         var newDate = new Date("2021-10-11T"+timeStr+":00.000Z");
-        return newDate.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});   
+        return newDate.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false});   
     }
-      
+
     function convertTimeRange(rangeStr) {
         var s = rangeStr.split('-')
-        return convertTime(s[0]) + ' - ' + convertTime(s[1]);   
+        return convertTime(s[0]) + ' - ' + convertTime(s[1]);
     }
 
 	$(function() {
@@ -88,7 +88,7 @@
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
-			
+
 			$window.on('load', function() {
 				$body.removeClass('is-loading');
 			});
@@ -107,7 +107,7 @@
 				}
 
 			}
-			
+
         // Time conversion
         $( ".convertTime" ).each(function( index ) {
             $(this).text(convertTime($(this).text()));
@@ -120,7 +120,7 @@
         $( ".convertTimeRange" ).each(function( index ) {
             $(this).text(convertTimeRange($(this).text()));
         });
-			
+
 		// Scrolly links.
 			$('.scrolly').scrolly(1000, -10);
 
@@ -150,7 +150,7 @@
 					});
 
 				});
-			
+
 			}
 
 	});

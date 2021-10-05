@@ -18,20 +18,20 @@ banner: images/banner.jpg
           <h2>Unsupervised 3D Learning in the Wild @ICCV2021</h2>
         </header>
         <p>
-          Recent years have witnessed significant progress in learning 3D representations from 2D visual data, which allows us to infer our 3D world from just a single or a few 2D observations at test time. However, many of these approaches rely heavily on synthetic data and/or extensive manual annotations as supervision during training, and hence face challenges when generalizing to complex real world scenarios.
-          Unsupervised 3D learning has therefore been gaining popularity recently, with the goal of understanding our entire 3D world by learning from unannotated, unconstrained (i.e., "in-the-wild") data. This workshop aims to cover the recent advances in unsupervised and weakly-supervised 3D learning.
+          Recent years have witnessed significant progress in learning 3D representations from 2D visual data, which allows us to reason about our 3D world from just a few or even just a single 2D observation at test time. However, many of these approaches rely heavily on synthetic data and/or extensive manual annotations as supervision during training, and hence face challenges when generalizing to complex real world scenarios.
+          Unsupervised 3D learning in the wild has therefore been gaining popularity recently, with the goal of understanding our entire 3D world by learning from unannotated, unconstrained (i.e., "in-the-wild") data. This workshop aims to cover the recent advances in unsupervised and weakly-supervised 3D learning.
         </p>
         <p>
-          More concretely: learning of 3D shape, pose, motion, appearance, illumination and material properties from "in-the-wild" images and videos, such as those collected from the Internet, without explicit ground-truth supervision.
+          More concretely: learning of 3D shape, pose, motion, appearance, illumination and material properties from "in-the-wild" data, such as Internet images and videos, without explicit ground-truth supervision.
         </p>
         <p>
           Beyond the current state of the field, the workshop will hopefully shed light on the challenging questions as well as the next steps. For example:
         </p>
         <ul>
-          <li>- Which level of supervision should we aim at for learning 3D in the wild at scale: well-captured real 3D data, synthetic data, weak annotations (e.g. keypoints, masks), category template shapes, category labels only or nothing at all?</li>
-          <li>- Inductive biases are often injected into unsupevised methods to replace explicit ground-truth supervision. Can they actually generalize to "in-the-wild" environments?</li>
-          <li>- What is the right representation for effective 3D learning in the wild?</li>
-          <li>- How to evaluate methods trained on "in-the-wild" data, as ground-truth information is usually unavailable?</li>
+          <li>- In order to perceive the 3D world in the wild, which level of supervision is needed: well-captured real 3D data, synthetic data, weak annotations (e.g. keypoints, masks), category template shapes, category labels only or nothing at all?</li>
+          <li>- Inductive biases are often injected into unsupevised methods to replace explicit ground-truth supervision. Can they actually generalize to in-the-wild environments?</li>
+          <li>- What are the right representations for effective 3D learning in the wild?</li>
+          <li>- How to evaluate methods trained on in-the-wild data, as ground-truth information is usually unavailable?</li>
           <li>- How to move beyond single-category learning towards more general 3D scene understanding?</li>
           <li>- How to recover complex appearance properties beyond geometry, as the ground-truth labels of those are even more difficult to obtain?</li>
         </ul>
@@ -49,84 +49,125 @@ banner: images/banner.jpg
       <h3 style="margin-bottom: 0; margin-bottom: 0;">7:00 - 18:00 EDT, Oct 11, 2021</h3>
       <p style="margin-top: 0; margin-bottom: 1em;">Google Calendar: <a href="https://calendar.google.com/calendar/u/0?cid=Ym9yaWtwY3BuNmx2c2RjaGVzMHRnM2dmcWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" target="_blank">link</a> (or view it <a href="https://calendar.google.com/calendar/embed?src=borikpcpn6lvsdches0tg3gfqc%40group.calendar.google.com" target="_blank">here</a>)</p>
       <p style="margin-top: 0; margin-bottom: 0; font-weight: bold;">The times below are automatically converted to the time zone of your browser.</p>
-      <p style="margin-top: 0; margin-bottom: 1em;"> The workshop starts on <span class="convertDate">11:00</span></p>
+      <p style="margin-top: 0; margin-bottom: 1em;"> The workshop starts at <span class="convertDate">11:00</span></p>
       <table class="alt">
         <tbody>
-            <col width="40%">
-            <col width="60%">
-            <tr>
-                <td class="convertTimeRange">11:00-11:05</td>
-                <td><strong>Opening</strong></td>
-            </tr>
-            <tr>
-                <td class="convertTimeRange">11:05-11:40</td>
-                <td><a href="https://www.weizmann.ac.il/math/dekel/" target="_blank">Tali Dekel</a></td>
-            </tr>
-            <tr>
-                <td class="convertTimeRange">11:40-12:15</td>
-                <td><a href="http://www.cvlibs.net/" target="_blank">Andreas Geiger</a></td>
-            </tr>
-            <tr>
-                <td class="convertTimeRange">12:15-12:50</td>
-                <td><a href="http://www.yu-jingyi.com/cv/" target="_blank">Jingyi Yu</a></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><strong>Short Break</strong></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="convertTimeRange">13:00-13:35</td>
-                <td><a href="https://d-novotny.github.io/" target="_blank">David Novotny</a></td>
-            </tr>
-            <tr>
-                <td class="convertTimeRange">13:35-14:10</td>
-                <td><a href="http://www0.cs.ucl.ac.uk/staff/I.Kokkinos/" target="_blank">Iasonas Kokkinos</a></td>
-            </tr>
-            <tr>
-                <td class="convertTimeRange">14:10-14:45</td>
-                <td><a href="http://www0.cs.ucl.ac.uk/staff/n.mitra/" target="_blank">Niloy Mitra</a></td>
-            </tr>
-            <tr>
-                <td class="convertTimeRange">14:45-15:20</td>
-                <td>Panel Discussion</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td><strong>Long Break / Networking</strong></td>
-            </tr>
-            <tr>
-              <td class="convertTimeRange">17:00-17:35</td>
-              <td><a href="http://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a></td>
+          <col width="15%">
+          <col width="15%">
+          <col width="60%">
+          <col width="10%">
+          <tr>
+            <td><h4><strong>Time</strong></h4></td>
+            <td><h4><strong>Speaker</strong></h4></td>
+            <td><h4><strong>Session</strong></h4></td>
+            <td><h4><strong>Links</strong></h4></td>
           </tr>
           <tr>
-              <td class="convertTimeRange">17:35-18:10</td>
-              <td><a href="https://people.eecs.berkeley.edu/~kanazawa/" target="_blank">Angjoo Kanazawa</a></td>
+            <td class="convertTimeRange">11:00-11:05</td>
+            <td></td>
+            <td>Opening</td>
+            <td></td>
           </tr>
           <tr>
-              <td class="convertTimeRange">18:10-18:45</td>
-              <td><a href="https://shubhtuls.github.io/" target="_blank">Shubham Tulsiani</a></td>
+            <td class="convertTimeRange">11:05-11:40</td>
+            <td><a href="https://www.weizmann.ac.il/math/dekel/" target="_blank">Tali Dekel</a></td>
+            <td>"Re-rendering Everyday Videos"</td>
+            <td></td>
           </tr>
           <tr>
-              <td></td>
-              <td><strong>Short Break</strong></td>
-              <td></td>
+            <td class="convertTimeRange">11:40-12:15</td>
+            <td><a href="http://www.cvlibs.net/" target="_blank">Andreas Geiger</a></td>
+            <td>"Generative Neural Scene Representations for 3D-Aware Image Synthesis"</td>
+            <td></td>
           </tr>
           <tr>
-              <td class="convertTimeRange">19:55-20:30</td>
-              <td><a href="https://www.cs.cornell.edu/~snavely/" target="_blank">Noah Snavely</a></td>
+            <td class="convertTimeRange">12:15-12:50</td>
+            <td><a href="http://www.yu-jingyi.com/cv/" target="_blank">Jingyi Yu</a></td>
+            <td>"Neural Modeling and Rendering for Creating Virtual Humans"</td>
+            <td></td>
           </tr>
           <tr>
-              <td class="convertTimeRange">20:30-20:50</td>
-              <td><a href="https://adel.ac/" target="_blank">Adel Ahmadyan</a></td>
+            <td></td>
+            <td></td>
+            <td><strong>Short Break</strong></td>
+            <td></td>
           </tr>
           <tr>
-              <td class="convertTimeRange">20:50-21:25</td>
-              <td><a href="https://research.nvidia.com/person/shalini-gupta" target="_blank">Shalini De Mello</a></td>
+            <td class="convertTimeRange">13:00-13:35</td>
+            <td><a href="https://d-novotny.github.io/" target="_blank">David Novotny</a></td>
+            <td>TBA</td>
+            <td></td>
           </tr>
           <tr>
-              <td class="convertTimeRange">21:25-22:00</td>
-              <td>Panel Discussion</td>
+            <td class="convertTimeRange">13:35-14:10</td>
+            <td><a href="http://www0.cs.ucl.ac.uk/staff/I.Kokkinos/" target="_blank">Iasonas Kokkinos</a></td>
+            <td>TBA</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="convertTimeRange">14:10-14:45</td>
+            <td><a href="http://www0.cs.ucl.ac.uk/staff/n.mitra/" target="_blank">Niloy Mitra</a></td>
+            <td>TBA</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="convertTimeRange">14:45-15:20</td>
+            <td></td>
+            <td>Panel Discussion</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><strong>Long Break / Networking</strong></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="convertTimeRange">17:00-17:35</td>
+            <td><a href="http://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a></td>
+            <td>TBA</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="convertTimeRange">17:35-18:10</td>
+            <td><a href="https://people.eecs.berkeley.edu/~kanazawa/" target="_blank">Angjoo Kanazawa</a></td>
+            <td>TBA</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="convertTimeRange">18:10-18:45</td>
+            <td><a href="https://shubhtuls.github.io/" target="_blank">Shubham Tulsiani</a></td>
+            <td>TBA</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><strong>Short Break</strong></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="convertTimeRange">19:55-20:30</td>
+            <td><a href="https://www.cs.cornell.edu/~snavely/" target="_blank">Noah Snavely</a></td>
+            <td>TBA</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="convertTimeRange">20:30-20:50</td>
+            <td><a href="https://adel.ac/" target="_blank">Adel Ahmadyan</a></td>
+            <td>TBA</td>
+          </tr>
+          <tr>
+            <td class="convertTimeRange">20:50-21:25</td>
+            <td><a href="https://research.nvidia.com/person/shalini-gupta" target="_blank">Shalini De Mello</a></td>
+            <td>"Can We Use Part Correspondences and Temporal Consistency for Self-Supervised 3D Reconstruction?"</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="convertTimeRange">21:25-22:00</td>
+            <td></td>
+            <td>Panel Discussion</td>
+            <td></td>
           </tr>
         </tbody>
       </table>
